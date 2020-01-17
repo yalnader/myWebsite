@@ -29,7 +29,7 @@ function Table(){
 
                             <Linkedin color="#000000" size={84} />
                         </div>
-                        LinkIn
+                        LinkedIn
 
                         </tr>
                     </td>
@@ -38,7 +38,7 @@ function Table(){
                             <div>
                                 <Breifcase fontSize = {84}/>
                             </div>
-                            Work Navigate to work tab
+                            Work
                         </tr>
                         <tr>
                         <div>
