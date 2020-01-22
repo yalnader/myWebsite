@@ -1,10 +1,10 @@
 import React from 'react';
 import './Table.css'
 import { ReactJs } from '@icons-pack/react-simple-icons';
-import { Icon as Github}  from './components/Github';
-import { Icon as Linkedin}  from './components/Linkedin';
-import { Icon as Work}  from './components/Work';
-import { Icon as Resume}  from './components/Resume';
+import Github from './components/Github';
+import LinkedIn from './components/Linkedin';
+import Work  from './components/Work';
+import Resume  from './components/Resume';
 import { Fade } from 'react-animation-components'
 
 function linkedinColor(b){
@@ -28,7 +28,7 @@ function Table(){
                                 <Github/>
                             </tr>
                             <tr>
-                                <Linkedin/>
+                                <LinkedIn/>
                             </tr>
                         </td>
                         <td>
