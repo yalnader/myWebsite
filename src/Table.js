@@ -5,10 +5,17 @@ import { Github } from '@icons-pack/react-simple-icons';
 import { Linkedin } from '@icons-pack/react-simple-icons';
 import  Breifcase  from 'react-ionicons/lib/MdBriefcase';
 import Document from 'react-ionicons/lib/MdDocument'
+import { Fade } from 'react-animation-components'
+
+function linkedinColor(b){
+
+}
+
 function Table(){
 
        return(
         <div className="Table">
+            <Fade in>
             <table>
                 <thead>
 
@@ -16,41 +23,48 @@ function Table(){
                 </thead>
 
                 <tbody>
-                    <td>
-                        <tr>
-                            <div>
+                    <td >
+                        <tr className="topRow">
+                            <a href =  "https://github.com/yalnader" target="_blank">
+                                <div>
 
-                            <Github color="#000000" size={84} />
-                            </div>
-                            Git Hub
+                                <Github  size={84} />
+                                </div>
+                                Github
+                            </a>
                         </tr>
                         <tr>
-                        <div>
-
-                            <Linkedin color="#000000" size={84} />
-                        </div>
-                        LinkedIn
+                            <a href="https://www.linkedin.com/in/yalnader/" target="_blank">
+                                <div>
+                                     <Linkedin id="linkedin"  size={84} onmouseover={linkedinColor()}/>
+                                </div>
+                                LinkedIn
+                            </a>
 
                         </tr>
                     </td>
                     <td>
-                        <tr>
+                        <tr className="topRow">
+                            <a href = "" target="_blank">
                             <div>
-                                <Breifcase fontSize = {84}/>
+                                <Breifcase color= "#cd5c5c" fontSize = {84}/>
                             </div>
                             Work
+                            </a>
                         </tr>
                         <tr>
-                        <div>
-                            <Document fontSize={84}/>
-                        </div>
-                        Resume
-                            
+                            <a href = "" target="_blank">
+                                <div>
+                                    <Document color= "#cd5c5c" fontSize={84}/>
+                                </div>
+                                Resume
+                            </a>
                         </tr>
                     </td>
 
                 </tbody>
             </table>
+            </Fade>
         </div>
 
        ) 
