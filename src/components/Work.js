@@ -23,7 +23,7 @@ class Work extends React.Component{
             }));
         }else{
             //curColor = "#cd5c5c"
-            curColor = "#000000"
+            curColor = "#2EC866"
             this.setState((state,props) => ({
                 color: curColor,
                 isHover: true

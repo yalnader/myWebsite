@@ -23,7 +23,7 @@ class LinkedIn extends React.Component{
             }));
         }else{
             //curColor = "#cd5c5c"
-            curColor = "#000000"
+            curColor = "#0077B5"
             this.setState((state,props) => ({
                 color: curColor,
                 isHover: true

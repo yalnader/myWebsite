@@ -23,7 +23,7 @@ class Resume extends React.Component{
             }));
         }else{
             //curColor = "#cd5c5c"
-            curColor = "#000000"
+            curColor = "#FFB13B"
             this.setState((state,props) => ({
                 color: curColor,
                 isHover: true
