@@ -9,17 +9,38 @@ class LinkedIn extends React.Component{
             color : "#cd5c5c",
             isHover: false
         }
+        this.colorChange = this.colorChange.bind(this);
     }
 
-    
+    colorChange(){
+        let curColor;
+        if(this.state.isHover){
+            // curColor = "#000000" 
+            curColor = "#cd5c5c"
+            this.setState((state,props) => ({
+                color: curColor,
+                isHover: false
+            }));
+        }else{
+            //curColor = "#cd5c5c"
+            curColor = "#000000"
+            this.setState((state,props) => ({
+                color: curColor,
+                isHover: true
+            }));
+        }
+        
+    }
     render(){
         return(
-            <a href="https://www.linkedin.com/in/yalnader/" target="_blank">
-                <div>
-                    <Linkedin id="linkedin"  size={84} color = {this.props.color}/>
-                </div>
-                LinkedIn
-            </a>
+            <div onMouseEnter={this.colorChange} onMouseLeave={this.colorChange}>
+                <a href="https://www.linkedin.com/in/yalnader/" target="_blank">
+                    <div>
+                        <Linkedin id="linkedin"  size={84} color = {this.state.color}/>
+                    </div>
+                    <span style={{color: this.state.color}}>LinkedIn</span>
+                </a>
+            </div>
         )
     }
 }
