@@ -7,7 +7,8 @@ class LinkedIn extends React.Component{
         super(props);
         this.state = {
             color : "#cd5c5c",
-            isHover: false
+            isHover: false,
+            size : 84
         }
         this.colorChange = this.colorChange.bind(this);
     }
@@ -36,7 +37,7 @@ class LinkedIn extends React.Component{
             <div onMouseEnter={this.colorChange} onMouseLeave={this.colorChange}>
                 <a href="https://www.linkedin.com/in/yalnader/" target="_blank">
                     <div>
-                        <Linkedin id="linkedin"  size={84} color = {this.state.color}/>
+                        <Linkedin id="linkedin"  size={this.state.size} color = {this.state.color}/>
                     </div>
                     <span style={{color: this.state.color}}>LinkedIn</span>
                 </a>

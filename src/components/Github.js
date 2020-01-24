@@ -7,9 +7,11 @@ class GitHub extends React.Component{
         super(props);
         this.state = {
             color : "#cd5c5c",
-            isHover: false
+            isHover: false,
+            size : 84
         }
         this.colorChange = this.colorChange.bind(this);
+        this.sizeChange = this.sizeChange.bind(this);
     }
 
     colorChange(){
@@ -31,13 +33,21 @@ class GitHub extends React.Component{
         }
         
     }
+
+
+    sizeChange(){
+
+
+    }
+    
+
     
     render(){
         return(
             <div onMouseEnter={this.colorChange} onMouseLeave={this.colorChange}>
             <a href =  "https://github.com/yalnader" target="_blank">
                 <div>
-                    <Github  size={84} color={this.state.color} />
+                    <Github  size={this.state.size} color={this.state.color} />
                 </div>
                 <span style={{color: this.state.color}}>Github</span>
             </a>

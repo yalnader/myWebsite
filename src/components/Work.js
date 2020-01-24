@@ -7,7 +7,8 @@ class Work extends React.Component{
         super(props);
         this.state = {
             color : "#cd5c5c",
-            isHover: false
+            isHover: false,
+            size : 84
         }
         this.colorChange = this.colorChange.bind(this);
     }
@@ -34,10 +35,10 @@ class Work extends React.Component{
     
     render(){
         return(
-            <div onMouseEnter={this.colorChange} onMouseLeave={this.colorChange}>    
-                <a href = "" target="_blank">
+            <div onMouseEnter={this.colorChange} onMouseLeave={this.colorChange} >    
+                <a href = "#" >
                     <div >
-                        <Breifcase color= {this.state.color} fontSize = {84} />
+                        <Breifcase color= {this.state.color} fontSize = {this.state.size} />
                     </div>
                     <span style={{color: this.state.color}}>Work</span>
                 </a>
@@ -47,3 +48,4 @@ class Work extends React.Component{
 }
 export default Work;
 
+// onClick = {this.props.handlerWork}

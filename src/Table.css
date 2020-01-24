@@ -2,6 +2,11 @@ table{
     /* border: 10; */
     border-color: black; 
     border-spacing:30px ;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 tr{
     padding-right: 30px;

@@ -1,0 +1,12 @@
+.bar ul{
+
+    color: red;
+    list-style: none;
+
+}
+
+.bar li{
+
+    text-decoration: none !important; 
+
+}

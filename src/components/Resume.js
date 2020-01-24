@@ -7,7 +7,8 @@ class Resume extends React.Component{
         super(props);
         this.state = {
             color : "#cd5c5c",
-            isHover: false
+            isHover: false,
+            size : 84
         }
         this.colorChange = this.colorChange.bind(this);
     }
@@ -15,7 +16,6 @@ class Resume extends React.Component{
     colorChange(){
         let curColor;
         if(this.state.isHover){
-            // curColor = "#000000" 
             curColor = "#cd5c5c"
             this.setState((state,props) => ({
                 color: curColor,
@@ -38,7 +38,7 @@ class Resume extends React.Component{
             <div onMouseEnter={this.colorChange} onMouseLeave={this.colorChange}>
                 <a href = "#" target="_blank">
                     <div>
-                        <Document color= {this.state.color} fontSize={84}/>
+                        <Document color= {this.state.color} fontSize={this.state.size}/>
                     </div>
                     <span style={{color: this.state.color}}>Resume</span>
                 </a>
