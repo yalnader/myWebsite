@@ -1,5 +1,25 @@
 .App {
   text-align: center;
+  /* background-color: #c5f0df; */
+  background: linear-gradient(120deg, #c5f0df, #e2f073, #b1f0bc);
+  background-size: 10000% 10000%;
+        
+  -webkit-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+  
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 57%}
+  50%{background-position:100% 44%}
+  100%{background-position:0% 57%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 57%}
+  50%{background-position:100% 44%}
+  100%{background-position:0% 57%}
+
+
 }
 
 .App-logo {
@@ -14,7 +34,7 @@
 }
 
 .App-header {
-  background-color: #c5f0df;
+  
   min-height: 100vh;
   /* display: flex;
   flex-direction: column;
@@ -27,11 +47,14 @@
   color: #61dafb;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.gitHub{
+
+  text-align: center;
+  /* background-color: #c5f0df; */
+  background: linear-gradient(120deg, #fcdd55, #63e73b, #d14dd1);
+  background-size: 10000% 10000%;
+        
+  -webkit-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+
+}

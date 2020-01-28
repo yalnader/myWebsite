@@ -1,5 +1,7 @@
 import React from 'react';
 import { Github } from '@icons-pack/react-simple-icons';
+// import '../App.css'
+
 
 class GitHub extends React.Component{
 
@@ -12,9 +14,12 @@ class GitHub extends React.Component{
         }
         this.colorChange = this.colorChange.bind(this);
         this.sizeChange = this.sizeChange.bind(this);
+        // this.changeBack = this.changeBack.bind(this);
     }
 
+
     colorChange(){
+        // this.changeBack();
         let curColor;
         if(this.state.isHover){
             // curColor = "#000000" 
@@ -35,6 +40,7 @@ class GitHub extends React.Component{
     }
 
 
+
     sizeChange(){
 
 
@@ -44,13 +50,13 @@ class GitHub extends React.Component{
     
     render(){
         return(
-            <div onMouseEnter={this.colorChange} onMouseLeave={this.colorChange}>
-            <a href =  "https://github.com/yalnader" target="_blank">
-                <div>
-                    <Github  size={this.state.size} color={this.state.color} />
-                </div>
-                <span style={{color: this.state.color}}>Github</span>
-            </a>
+            <div className={this.state.isHover ? 'gitHub' : 'App'} onMouseEnter={this.colorChange } onMouseLeave={this.colorChange} onMouseOver={this.changeBack}>
+                <a href =  "https://github.com/yalnader" target="_blank">
+                    <div>
+                        <Github  size={this.state.size} color={this.state.color} />
+                    </div>
+                    <span style={{color: this.state.color}}>Github</span>
+                </a>
             </div>
         )
     }
