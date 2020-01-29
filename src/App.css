@@ -18,8 +18,6 @@
   0%{background-position:0% 57%}
   50%{background-position:100% 44%}
   100%{background-position:0% 57%}
-
-
 }
 
 .App-logo {
@@ -47,11 +45,44 @@
   color: #61dafb;
 }
 
-.gitHub{
+.github{
 
   text-align: center;
   /* background-color: #c5f0df; */
-  background: linear-gradient(120deg, #fcdd55, #63e73b, #d14dd1);
+  background: linear-gradient(120deg, #A8FFE8, #A7FAD0, #B8FAC8 ,#D0FFBD,#B5F5B6);
+  background-size: 10000% 10000%;
+        
+  -webkit-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+
+}
+.linkedin{
+
+  text-align: center;
+  /* background-color: #c5f0df; */
+  background: linear-gradient(120deg, #82FFAE, #B4FA93, #FAF88E, #F5DC8C , #FFCD91);
+  background-size: 10000% 10000%;
+        
+  -webkit-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+
+}
+.work{
+
+  text-align: center;
+  /* background-color: #c5f0df; */
+  background: linear-gradient(120deg, #FFD5BF, #FCC8BD, #FDCBCC, #E6ACCF, #F8BDFF);
+  background-size: 10000% 10000%;
+        
+  -webkit-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+
+}
+.resume{
+
+  text-align: center;
+  /* background-color: #c5f0df; */
+  background: linear-gradient(120deg, #DB9CFF, #BB9CFF, #A8A8FF, #8EA9E8, #9AD9FF);
   background-size: 10000% 10000%;
         
   -webkit-animation: AnimationName 10s ease infinite;

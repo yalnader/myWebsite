@@ -50,7 +50,7 @@ class GitHub extends React.Component{
     
     render(){
         return(
-            <div className={this.state.isHover ? 'gitHub' : 'App'} onMouseEnter={this.colorChange } onMouseLeave={this.colorChange} onMouseOver={this.changeBack}>
+            <div onMouseEnter={this.colorChange } onMouseLeave={this.colorChange} onMouseOver={this.changeBack}>
                 <a href =  "https://github.com/yalnader" target="_blank">
                     <div>
                         <Github  size={this.state.size} color={this.state.color} />

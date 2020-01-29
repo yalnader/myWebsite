@@ -9,9 +9,10 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      work : false
+      backColor : "App"
     }
     this.handleWork = this.handleWork.bind(this);
+    this.handleColor = this.handleColor.bind(this);
   
   }
 
@@ -26,11 +27,18 @@ class App extends React.Component{
 
   }
 
+
+  handleColor(e){
+    this.setState((state, props) =>({
+      backColor: e
+    }));
+  }
+
   render(){
     return (
-      <div className="App">
+      <div className={this.state.backColor}>
         <div className="App-header">
-        {this.state.work? <WorkPage/> : <Table handleWork={this.handleWork.bind(this)}/>} 
+        {this.state.work? <WorkPage/> : <Table parentMethod={this.handleColor}/>} 
       </div>
       </div>
     )
