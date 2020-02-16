@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1c2abd7.chunk.css",
-    "main.js": "/static/js/main.bf170a02.chunk.js",
-    "main.js.map": "/static/js/main.bf170a02.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.225e90d1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.225e90d1.js.map",
-    "static/js/2.8d5b2cad.chunk.js": "/static/js/2.8d5b2cad.chunk.js",
-    "static/js/2.8d5b2cad.chunk.js.map": "/static/js/2.8d5b2cad.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.60c0642ed867f4491c2e5f3e4914f46f.js": "/precache-manifest.60c0642ed867f4491c2e5f3e4914f46f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f1c2abd7.chunk.css.map": "/static/css/main.f1c2abd7.chunk.css.map",
-    "static/js/2.8d5b2cad.chunk.js.LICENSE": "/static/js/2.8d5b2cad.chunk.js.LICENSE",
-    "static/media/App.css": "/static/media/weatheringWithYouCrop1.fcdf95aa.png"
+    "main.css": "/my-website/static/css/main.a1a92de2.chunk.css",
+    "main.js": "/my-website/static/js/main.c2657f72.chunk.js",
+    "main.js.map": "/my-website/static/js/main.c2657f72.chunk.js.map",
+    "runtime-main.js": "/my-website/static/js/runtime-main.5ac12270.js",
+    "runtime-main.js.map": "/my-website/static/js/runtime-main.5ac12270.js.map",
+    "static/js/2.f9c6c488.chunk.js": "/my-website/static/js/2.f9c6c488.chunk.js",
+    "static/js/2.f9c6c488.chunk.js.map": "/my-website/static/js/2.f9c6c488.chunk.js.map",
+    "index.html": "/my-website/index.html",
+    "precache-manifest.c96e751700911cdccaf596ca8be718f4.js": "/my-website/precache-manifest.c96e751700911cdccaf596ca8be718f4.js",
+    "service-worker.js": "/my-website/service-worker.js",
+    "static/css/main.a1a92de2.chunk.css.map": "/my-website/static/css/main.a1a92de2.chunk.css.map",
+    "static/js/2.f9c6c488.chunk.js.LICENSE": "/my-website/static/js/2.f9c6c488.chunk.js.LICENSE",
+    "static/media/index.css": "/my-website/static/media/cloud.5dc0b211.png",
+    "static/media/App.css": "/my-website/static/media/landscape2.e0762b78.jpg",
+    "static/media/yasser.pdf": "/my-website/static/media/yasser.4a414903.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.225e90d1.js",
-    "static/js/2.8d5b2cad.chunk.js",
-    "static/css/main.f1c2abd7.chunk.css",
-    "static/js/main.bf170a02.chunk.js"
+    "static/js/runtime-main.5ac12270.js",
+    "static/js/2.f9c6c488.chunk.js",
+    "static/css/main.a1a92de2.chunk.css",
+    "static/js/main.c2657f72.chunk.js"
   ]
 }
